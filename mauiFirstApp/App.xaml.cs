@@ -1,14 +1,17 @@
-using mauiFirstApp;
+п»їusing Microsoft.Extensions.DependencyInjection;
 
-namespace SimpleApp
+namespace MauiFirstApp
 {
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
-            // Устанавливаем стартовую страницу
-            MainPage = new MainPage();
+        }
+
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(new AppShell());
         }
     }
 }
