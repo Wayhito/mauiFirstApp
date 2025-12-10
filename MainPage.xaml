@@ -22,6 +22,13 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
 
+            <Button
+                x:Name="SaveBtn"
+                Text="Save"
+                Clicked="SaveBtn_Clicked" />
+
+            <Label x:Name="SaveResultLabel" />
+
         </VerticalStackLayout>
     </ScrollView>
 
